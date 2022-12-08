@@ -17,7 +17,8 @@ class MembersTableSeeder extends Seeder
         $param = [
             'name'=>'モンキー・D・ルフィ―',
             'age'=> 19,
-            'nationality'=>'フーシャ村'
+            'nationality'=>'フーシャ村',
+            'ability'=>'ゴムゴムの実'
         ];
         Member::create($param);
 

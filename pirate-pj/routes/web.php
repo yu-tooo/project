@@ -13,4 +13,5 @@ use App\Http\Controllers\MemberController;
 |
 */
 Route::get('/',[MemberController::class,'index']);
-
+Route::post('/add',[MemberController::class,'add']);
+Route::post('/edit',[MemberController::class,'edit']);

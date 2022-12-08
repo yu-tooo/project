@@ -18,6 +18,7 @@ class CreateMembersTable extends Migration
             $table->string('name',100);
             $table->integer('age');
             $table->string('nationality',100);
+            $table->string('ability',100)->default('なし');
             $table->timestamps();
         });
     }
