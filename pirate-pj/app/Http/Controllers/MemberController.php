@@ -22,10 +22,9 @@ class MemberController extends Controller
         return redirect('/');
     }
 
-    public function edit(MemberRequest $request)
+    public function edit(Request $request)
     {
-        $form = $request->all();
-        dd($form);
+        $form = $request -> all(); 
         unset($form['_token']);
         Member::where('id',$request->id)->update($form);
         return redirect('/');

@@ -14,7 +14,7 @@
     <td><input type="text" name="age" value="{{$member->age}}"></td>
     <td><input type="text" name="nationality" value="{{$member->nationality}}"></td>
     <td><input type="text" name="ability" value="{{$member->ability}}"></td>
-    <form action="/edit" method="post">
+    <form action="/edit?id={{$member->id}}" method="post">
       @csrf
       <td>
         <button>編集</button>
